@@ -1,3 +1,9 @@
+contrail-nova-extensions (0.2-0tcp1) trusty; urgency=medium
+
+  * Build for Kilo
+
+ -- Filip Pytloun <filip.pytloun@tcpcloud.eu>  Wed, 12 Aug 2015 16:12:54 +0200
+
 contrail-nova-extensions (0.1-0tcp1) trusty; urgency=medium
 
   * Initial release for juno
