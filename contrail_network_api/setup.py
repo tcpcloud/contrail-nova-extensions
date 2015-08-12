@@ -1,0 +1,27 @@
+#
+# Copyright (c) 2014 Juniper Networks, Inc. All rights reserved.
+#
+
+import setuptools
+
+
+def requirements(filename):
+    with open(filename) as f:
+        lines = f.read().splitlines()
+    return lines
+
+setuptools.setup(
+    name='contrail_nova_networkapi',
+    version='0.1',
+
+    author="OpenContrail",
+    author_email="dev@lists.opencontrail.org",
+    license="Apache Software License",
+    url="http://www.opencontrail.org/",
+    long_description="OpenContrail nova network API",
+
+    package_data={'': ['*.html', '*.css', '*.xml']},
+    packages=setuptools.find_packages(),
+    install_requires=requirements('requirements.txt'),
+    zip_safe=False,
+)
