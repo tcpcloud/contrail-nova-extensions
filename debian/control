@@ -1,0 +1,17 @@
+Source: contrail-nova-extensions
+Section: python
+Priority: optional
+Maintainer: Filip Pytloun <filip.pytloun@tcpcloud.eu>
+Build-Depends: debhelper (>= 9),
+               python-all (>= 2.7.1),
+Standards-Version: 3.9.5
+Homepage: http://www.opencontrail.org
+
+Package: contrail-nova-networkapi
+Architecture: all
+Depends: nova-api,
+         ${misc:Depends},
+         ${python:Depends}
+Description: OpenContrail networking api for nova
+ For more informations see upstream:
+ https://github.com/Juniper/contrail-nova-extensions
